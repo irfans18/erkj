@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rumah Keju Jogja</title>
+
+		<link rel="icon" href="assets/logo.png" />
+
+		<!-- Tailwind CSS -->
+		<link href="/dist/output.css" rel="stylesheet" />
+
+		<script
+			src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js"
+			defer
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class=" ">
+			<section
+				id="navbar"
+				class="z-50 sticky top-0 h-full w-full border-box transition-all duration-500 linear lg:px-24 md:px-20 px-8 py-8 bg-white"
+			>
+				<style>
+					@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+					/* .navbar-1-5 .btn-fill {
+                  background-color: #32735f;
+                  transition: 0.3s;
+               }
+               .navbar-1-5 .btn-fill:hover {
+                  background-color: #2a7e65;
+                  transition: 0.3s;
+               } */
+					.navbar-1-5 nav a.nav-link:hover,
+					.navbar-1-5 nav a.nav-link.active {
+						font-weight: 500;
+						transition: 0.3s;
+					}
+					.navbar-1-5 nav a.nav-link {
+						/* color: #F17714; */
+						transition: 0.3s;
+					}
+					.navbar-1-5 #menu-toggle:checked + #menu,
+					.navbar-1-5 #menu-toggle:checked + #menu + #menu {
+						display: block;
+					}
+				</style>
+				<div
+					class="navbar-1-5 max-h-10"
+					style="font-family: 'Poppins', sans-serif"
+				>
+					<div
+						class="container mx-auto flex flex-wrap flex-row items-center justify-between"
+					>
+						<nav
+							class="lg:flex hidden lg:w-2/5 flex-wrap items-center text-base md:ml-auto lg:space-y-0 space-y-6 lg:space-x-2 space-x-0"
+						>
+							<a
+								href=""
+								class="text-white bg-orange-rkj rounded-full p-0 lg:p-2 nav-link"
+								>Beranda</a
+							>
+							<a
+								href=""
+								class="text-orange-rkj hover:bg-gray-100 rounded-lg p-0 lg:p-2 nav-link"
+								>Produk</a
+							>
+							<a
+								href=""
+								class="text-orange-rkj hover:bg-gray-100 rounded-lg p-0 lg:p-2 nav-link"
+								>Workshop</a
+							>
+							<a
+								href=""
+								class="text-orange-rkj hover:bg-gray-100 rounded-lg p-0 lg:p-2 nav-link"
+								>About Us</a
+							>
+						</nav>
+						<a
+							href=""
+							class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center lg:items-center lg:justify-center"
+						>
+							<img src="assets/logo.png" width="120" alt="" />
+						</a>
+						<label
+							for="menu-toggle"
+							class="cursor-pointer lg:hidden block"
+						>
+							<svg
+								class="w-6 h-6"
+								fill="none"
+								stroke="#092A33"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M4 6h16M4 12h16M4 18h16"
+								></path>
+							</svg>
+						</label>
+						<input class="hidden" type="checkbox" id="menu-toggle" />
+						<div
+							class="hidden w-full flex-wrap items-center text-base justify-center"
+							id="menu"
+						>
+							<nav
+								class="lg:space-x-12 space-x-0 lg:flex items-center justify-between text-base pt-8 lg:pt-0 lg:space-y-0 space-y-6"
+							>
+								<a href="" class="nav-link block active">Beranda</a>
+								<a href="" class="nav-link block">Produk</a>
+								<a href="" class="nav-link block">Workshop</a>
+								<a href="" class="nav-link block">About Us</a>
+							</nav>
+						</div>
+						<div
+							class="lg:w-2/5 lg:inline-flex lg:justify-end ml-0 hidden lg:items-center w-full"
+							id="menu"
+						>
+							<button
+								class="bg-orange-rkj hover:bg-orange-400 text-white items-center border-0 py-3 px-8 focus:outline-none rounded-2xl font-medium text-base mt-6 lg:mt-0"
+							>
+								Contact Us
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div
+				id="default-carousel"
+				class="relative w-full"
+				data-carousel="slide"
+			>
+				<!-- Carousel wrapper -->
+				<div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+					<!-- Item 1 -->
+					<div class="hidden duration-700 ease-in-out" data-carousel-item>
+						<section id="hero-1" class="flex mb-5 lg:mx-20 2xl:px-24">
+							<style>
+								.image-cropper {
+									/* width: 100px;
+                           height: 100px; */
+									position: relative;
+									overflow: hidden;
+									border-radius: 50%;
+								}
+								.image-cropper img {
+									display: inline;
+									margin: 0 auto;
+									height: 100%;
+									width: auto;
+								}
+							</style>
+							<div
+								class="flex flex-col justify-start px-6 space-y-6 w-2/5"
+							>
+								<div class="flex space-x-2">
+									<div class="flex" style="margin-left: -1em">
+										<img
+											src="/assets/icon/Halal.svg"
+											height="64"
+											width="64"
+											alt=""
+										/>
+										<!-- <span>100% <br> Halal</span> -->
+									</div>
+									<div class="flex">
+										<img
+											src="/assets/icon/BPOM.svg"
+											height="64"
+											width="64"
+											alt=""
+										/>
+										<!-- <span>Badan <br> POM</span> -->
+									</div>
+								</div>
+								<h1 class="text-7xl font-bold text-orange-rkj">
+									Keju <br />
+									Natural
+								</h1>
+								<h2 class="text-xl text-orange-rkj">
+									Real People Eat Real Cheese
+								</h2>
+								<p>
+									Rumah Keju Jogja hadir untuk kamu pecinta keju
+									sejati. Dengan setiap gigitan, kamu akan merasakan
+									kelezatan keju alami yang kaya rasa dan teksturnya
+									yang autentik
+								</p>
+								<div class="">
+									<a
+										href=""
+										class="bg-orange-rkj text-white rounded-full p-4"
+										>Order Sekarang</a
+									>
+								</div>
+							</div>
+							<div class="flex justify-center w-3/5">
+								<div class="image-cropper">
+									<img
+										src="https://via.placeholder.com/150"
+										class="rounded"
+									/>
+								</div>
+							</div>
+						</section>
+					</div>
+					<!-- Item 2 -->
+					<div class="hidden duration-700 ease-in-out" data-carousel-item>
+						<section id="hero-2" class="flex lg:mx-20 2xl:pr-28 pl-4">
+							<style>
+								.image-cropper-2 {
+									/* width: 100px;
+                  height: 100px; */
+									position: relative;
+									overflow: hidden;
+									/* border-radius: 50%; */
+								}
+								.image-cropper-2 img {
+									display: inline;
+									margin: 0 auto;
+									height: 100%;
+									/* width: auto; */
+								}
+							</style>
+							<div class="flex w-2/5 h-3/4">
+								<div
+									style="height: 75vh"
+									class="w-full 2xl:ml-24 rounded-3xl image-cropper-2 bg-gray-700"
+								>
+									<img
+										class="w-full"
+										src="https://via.placeholder.com/150"
+									/>
+								</div>
+							</div>
+							<div
+								class="flex flex-col justify-start pl-6 space-y-4 2xl:space-y-12 w-auto"
+							>
+								<h1 class="text-7xl font-bold text-orange-rkj">
+									Nikmati <br />
+									Keju Sejati
+								</h1>
+								<p class="2xl:text-xl">
+									Rasakan sentuhan keju yang autentik, meleleh dalam
+									kehangatan yang memanjakan. Rumah Keju Jogja hadir
+									untuk memberikan pengalaman kuliner yang tak
+									terlupakan memenuhi keinginan.
+								</p>
+								<div class="flex space-x-12" style="margin-left: -6em">
+									<div
+										class="w-48 h-48 2xl:w-72 2xl:h-72 rounded-3xl image-cropper-2 bg-gray-700"
+									>
+										<img src="https://via.placeholder.com/150" />
+									</div>
+									<div
+										class="w-48 h-48 2xl:w-72 2xl:h-72 rounded-3xl image-cropper-2 bg-gray-700"
+									>
+										<img src="https://via.placeholder.com/150" />
+									</div>
+									<div
+										class="w-48 h-48 2xl:w-72 2xl:h-72 rounded-3xl image-cropper-2 bg-gray-700"
+									>
+										<img src="https://via.placeholder.com/150" />
+									</div>
+								</div>
+								<div class="flex justify-end">
+									<a
+										href=""
+										class="bg-orange-rkj text-white rounded-full p-4"
+										>Order Sekarang</a
+									>
+								</div>
+							</div>
+						</section>
+					</div>
+					<!-- Item 3 -->
+					<div class="hidden duration-700 ease-in-out" data-carousel-item>
+						<img
+							src="/docs/images/carousel/carousel-3.svg"
+							class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+							alt="..."
+						/>
+					</div>
+					<!-- Item 4 -->
+					<div class="hidden duration-700 ease-in-out" data-carousel-item>
+						<img
+							src="/docs/images/carousel/carousel-4.svg"
+							class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+							alt="..."
+						/>
+					</div>
+					<!-- Item 5 -->
+					<div class="hidden duration-700 ease-in-out" data-carousel-item>
+						<img
+							src="/docs/images/carousel/carousel-5.svg"
+							class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+							alt="..."
+						/>
+					</div>
+				</div>
+				<!-- Slider indicators -->
+				<div
+					class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2"
+				>
+					<button
+						type="button"
+						class="w-3 h-3 rounded-full"
+						aria-current="true"
+						aria-label="Slide 1"
+						data-carousel-slide-to="0"
+					></button>
+					<button
+						type="button"
+						class="w-3 h-3 rounded-full"
+						aria-current="false"
+						aria-label="Slide 2"
+						data-carousel-slide-to="1"
+					></button>
+					<button
+						type="button"
+						class="w-3 h-3 rounded-full"
+						aria-current="false"
+						aria-label="Slide 3"
+						data-carousel-slide-to="2"
+					></button>
+					<button
+						type="button"
+						class="w-3 h-3 rounded-full"
+						aria-current="false"
+						aria-label="Slide 4"
+						data-carousel-slide-to="3"
+					></button>
+					<button
+						type="button"
+						class="w-3 h-3 rounded-full"
+						aria-current="false"
+						aria-label="Slide 5"
+						data-carousel-slide-to="4"
+					></button>
+				</div>
+				<!-- Slider controls -->
+				<button
+					type="button"
+					class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+					data-carousel-prev
+				>
+					<span
+						class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+					>
+						<svg
+							class="w-4 h-4 text-white dark:text-gray-800"
+							aria-hidden="true"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 6 10"
+						>
+							<path
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M5 1 1 5l4 4"
+							/>
+						</svg>
+						<span class="sr-only">Previous</span>
+					</span>
+				</button>
+				<button
+					type="button"
+					class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+					data-carousel-next
+				>
+					<span
+						class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+					>
+						<svg
+							class="w-4 h-4 text-white dark:text-gray-800"
+							aria-hidden="true"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 6 10"
+						>
+							<path
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="m1 9 4-4-4-4"
+							/>
+						</svg>
+						<span class="sr-only">Next</span>
+					</span>
+				</button>
+			</div>
+
+			<section id="hero-1" class="hidden mb-5 lg:mx-20 2xl:px-24">
+				<style>
+					.image-cropper {
+						/* width: 100px;
+                  height: 100px; */
+						position: relative;
+						overflow: hidden;
+						border-radius: 50%;
+					}
+					.image-cropper img {
+						display: inline;
+						margin: 0 auto;
+						height: 100%;
+						width: auto;
+					}
+				</style>
+				<div class="flex flex-col justify-start px-6 space-y-6 w-2/5">
+					<div class="flex space-x-2">
+						<div class="flex" style="margin-left: -1em">
+							<img
+								src="/assets/icon/Halal.svg"
+								height="64"
+								width="64"
+								alt=""
+							/>
+							<!-- <span>100% <br> Halal</span> -->
+						</div>
+						<div class="flex">
+							<img
+								src="/assets/icon/BPOM.svg"
+								height="64"
+								width="64"
+								alt=""
+							/>
+							<!-- <span>Badan <br> POM</span> -->
+						</div>
+					</div>
+					<h1 class="text-7xl font-bold text-orange-rkj">
+						Keju <br />
+						Natural
+					</h1>
+					<h2 class="text-xl text-orange-rkj">
+						Real People Eat Real Cheese
+					</h2>
+					<p>
+						Rumah Keju Jogja hadir untuk kamu pecinta keju sejati. Dengan
+						setiap gigitan, kamu akan merasakan kelezatan keju alami yang
+						kaya rasa dan teksturnya yang autentik
+					</p>
+					<div class="">
+						<a href="" class="bg-orange-rkj text-white rounded-full p-4"
+							>Order Sekarang</a
+						>
+					</div>
+				</div>
+				<div class="flex justify-center w-3/5">
+					<div class="image-cropper">
+						<img src="https://via.placeholder.com/150" class="rounded" />
+					</div>
+				</div>
+			</section>
+			<section id="hero-2" class="hidden lg:mx-20 2xl:pr-28 pl-4">
+				<style>
+					.image-cropper-2 {
+						/* width: 100px;
+                  height: 100px; */
+						position: relative;
+						overflow: hidden;
+						/* border-radius: 50%; */
+					}
+					.image-cropper-2 img {
+						display: inline;
+						margin: 0 auto;
+						height: 100%;
+						/* width: auto; */
+					}
+				</style>
+				<div class="flex w-2/5 h-3/4">
+					<div
+						style="height: 75vh"
+						class="w-full 2xl:ml-24 rounded-3xl image-cropper-2 bg-gray-700"
+					>
+						<img class="w-full" src="https://via.placeholder.com/150" />
+					</div>
+				</div>
+				<div
+					class="flex flex-col justify-start pl-6 space-y-4 2xl:space-y-12 w-auto"
+				>
+					<h1 class="text-7xl font-bold text-orange-rkj">
+						Nikmati <br />
+						Keju Sejati
+					</h1>
+					<p class="2xl:text-xl">
+						Rasakan sentuhan keju yang autentik, meleleh dalam kehangatan
+						yang memanjakan. Rumah Keju Jogja hadir untuk memberikan
+						pengalaman kuliner yang tak terlupakan memenuhi keinginan.
+					</p>
+					<div class="flex space-x-12" style="margin-left: -6em">
+						<div
+							class="w-48 h-48 2xl:w-72 2xl:h-72 rounded-3xl image-cropper-2 bg-gray-700"
+						>
+							<img src="https://via.placeholder.com/150" />
+						</div>
+						<div
+							class="w-48 h-48 2xl:w-72 2xl:h-72 rounded-3xl image-cropper-2 bg-gray-700"
+						>
+							<img src="https://via.placeholder.com/150" />
+						</div>
+						<div
+							class="w-48 h-48 2xl:w-72 2xl:h-72 rounded-3xl image-cropper-2 bg-gray-700"
+						>
+							<img src="https://via.placeholder.com/150" />
+						</div>
+					</div>
+					<div class="flex justify-end">
+						<a href="" class="bg-orange-rkj text-white rounded-full p-4"
+							>Order Sekarang</a
+						>
+					</div>
+				</div>
+			</section>
+			<section id="hero-3" class="flex lg:mx-20 2xl:px-28 pl-4">
+				<style>
+					.image-cropper-2 {
+						/* width: 100px;
+                  height: 100px; */
+						position: relative;
+						overflow: hidden;
+						/* border-radius: 50%; */
+					}
+					.image-cropper-2 img {
+						display: inline;
+						margin: 0 auto;
+						height: 100%;
+						/* width: auto; */
+					}
+				</style>
+				<div class="flex flex-col justify-center">
+					<div class="h-3/5 bg-gray-300">
+						<span
+							class="text-white text-7xl flex text-center justify-center p-4 2xl:p-6"
+						>
+							Workshop <br />
+							Rumah Keju Jogja
+						</span>
+					</div>
+
+					<div class="h-2/5 space-x-2 flex items-end pr-24 2xl:pt-28">
+						<p class="2xl:text-xl pb-12">
+							Rumah Keju Jogja mempunyai misi mengedukasi masyarakat
+							tentang keju melalui Workshop cara membuat keju. Gabung
+							bersama kami ciptakan kejumu sendiri!
+						</p>
+						<div class="flex space-x-12 pt-8 pb-16">
+							<div
+								class="w-48 h-48 2xl:w-72 2xl:h-72 rounded-3xl image-cropper-2 bg-gray-700"
+							>
+								<img src="https://via.placeholder.com/150" />
+							</div>
+							<div
+								class="w-48 h-48 2xl:w-72 2xl:h-72 rounded-3xl image-cropper-2 bg-gray-700"
+							>
+								<img src="https://via.placeholder.com/150" />
+							</div>
+							<div
+								class="w-48 h-48 2xl:w-72 2xl:h-72 rounded-3xl image-cropper-2 bg-gray-700"
+							>
+								<img src="https://via.placeholder.com/150" />
+							</div>
+						</div>
+					</div>
+					<div class="flex">
+						<h2 class="text-3xl font-bold w-2/5">
+							Gabung bersama kami <br />
+							ciptakan kejumu sendiri!
+						</h2>
+						<div class="flex w-3/5">
+							<a
+								href=""
+								class="bg-orange-rkj text-white rounded-full px-4 py-2 my-4"
+								>Daftar Sekarang</a
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+	</body>
+</html>
