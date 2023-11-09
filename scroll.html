@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Scrolling in a Div</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				font-family: Arial, sans-serif;
+			}
+
+			.scrollable-container {
+				width: 300px; /* Set the desired width */
+				height: 2000vh; /* Set the desired height for the scrollable div */
+				border: 1px solid #ccc;
+				overflow: auto; /* Enable scrolling for the div */
+			}
+
+			.scrolling-content {
+				padding: 10px; /* Add padding to create some space within the div */
+			}
+
+			.message {
+				text-align: center;
+				font-size: 24px;
+				padding: 100px 0;
+				display: block;
+			}
+
+			.image-container {
+				text-align: center;
+				display: none;
+			}
+
+			img {
+				max-width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="scrollable-container">
+			<div class="scrolling-content">
+				<!-- Your content goes here -->
+				<div class="message">Scroll down to see the images.</div>
+				<div class="image-container">
+					<img
+						id="img1"
+						style="rotate: 90deg"
+						src="assets/img/img1.svg"
+						alt="Image 1"
+					/>
+					<img id="img2" src="assets/img/img1.svg" alt="Image 2" />
+				</div>
+			</div>
+		</div>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const message = document.querySelector(".message");
+				const imageContainer = document.querySelector(".image-container");
+				const img1 = document.getElementById("img1");
+				const img2 = document.getElementById("img2");
+
+				window.addEventListener("scroll", function () {
+					if (window.scrollY >= 100) {
+						message.style.display = "none";
+						imageContainer.style.display = "block";
+					}
+
+					if (window.scrollY >= 200) {
+						img1.style.display = "none";
+						img2.style.display = "block";
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
