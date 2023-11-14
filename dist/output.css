@@ -1523,8 +1523,8 @@ input:checked + .toggle-bg {
   background-color: rgb(156 163 175 / 0.2);
 }
 
-.bg-gray-400\/40 {
-  background-color: rgb(156 163 175 / 0.4);
+.bg-gray-400\/30 {
+  background-color: rgb(156 163 175 / 0.3);
 }
 
 .bg-gray-700 {
@@ -1554,14 +1554,6 @@ input:checked + .toggle-bg {
 
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
-}
-
-.bg-gray-400\/50 {
-  background-color: rgb(156 163 175 / 0.5);
-}
-
-.bg-gray-400\/30 {
-  background-color: rgb(156 163 175 / 0.3);
 }
 
 .bg-opacity-50 {
