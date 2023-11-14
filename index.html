@@ -24,7 +24,7 @@
 	<body>
 		<section
 			id="navbar"
-			class="z-50 sticky top-0 h-full w-full border-box transition-all duration-500 linear lg:px-24 md:px-20 px-8 py-8 bg-white"
+			class="z-50 sticky top-0 h-full w-full border-box transition-all duration-500 linear lg:px-24 md:px-20 px-8 py-8 "
 		>
 			<style>
 				@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -130,19 +130,19 @@
 				</div>
 			</div>
 		</section>
-		<div class="content">
 
-			<div class="orn-container">
+		<div class="content">
+			<div class="hidden lg:inline orn-container">
 				<div class="w-full h-full">
 					<img
 						class="orn-trace"
 						src="assets/img/ornamen/traceability.png"
-						alt="natural-core"
+						alt="traceability-core"
 					/>
 					<img
 						class="orn-equality"
 						src="assets/img/ornamen/equality.png"
-						alt="natural-core"
+						alt="equality-core"
 					/>
 					<img
 						class="orn-natural"
@@ -153,14 +153,17 @@
 			</div>
 			<div
 				id="default-carousel"
-				class="relative w-full z-30"
+				class="hidden lg:inline relative w-full z-30"
 				data-carousel="static"
 			>
 				<!-- Carousel wrapper -->
 				<div class="relative h-56 overflow-hidden rounded-lg md:h-[80vh]">
 					<!-- Item 1 -->
 					<div class="hidden duration-700 ease-in-out" data-carousel-item>
-						<section id="hero-1" class="flex mb-5 lg:mx-20 2xl:px-24 mt-10 2xl:mt-20">
+						<section
+							id="hero-1"
+							class="flex mb-5 lg:mx-20 2xl:px-24 mt-10 2xl:mt-20"
+						>
 							<style>
 								.image-cropper {
 									/* width: 100px;
@@ -220,7 +223,7 @@
 									>
 								</div>
 							</div>
-							<div class="flex justify-center w-3/5 ">
+							<div class="flex justify-center w-3/5">
 								<div class="image-cropper h-3/5">
 									<img
 										src="assets/img/cheese-platter.webp"
@@ -253,10 +256,7 @@
 									style="height: 75vh"
 									class="w-full 2xl:ml-24 rounded-3xl image-cropper-2 bg-gray-700"
 								>
-									<img
-										class="w-full"
-										src="https://via.placeholder.com/150"
-									/>
+									<img class="w-full" src="assets/img/1.webp" />
 								</div>
 							</div>
 							<div
@@ -276,17 +276,17 @@
 									<div
 										class="w-48 h-48 2xl:w-72 2xl:h-72 rounded-3xl image-cropper-2 bg-gray-700"
 									>
-										<img src="https://via.placeholder.com/150" />
+										<img src="assets/img/2.webp" />
 									</div>
 									<div
 										class="w-48 h-48 2xl:w-72 2xl:h-72 rounded-3xl image-cropper-2 bg-gray-700"
 									>
-										<img src="https://via.placeholder.com/150" />
+										<img src="assets/img/3.webp" />
 									</div>
 									<div
 										class="w-48 h-48 2xl:w-72 2xl:h-72 rounded-3xl image-cropper-2 bg-gray-700"
 									>
-										<img src="https://via.placeholder.com/150" />
+										<img src="assets/img/4.webp" />
 									</div>
 								</div>
 								<div class="flex justify-end">
@@ -316,12 +316,12 @@
 									height: 100%;
 									/* width: auto; */
 								}
-                        .bg-img-fotbar{
-                           background-image: url('assets/img/fotbar.webp');
-                           background-repeat: no-repeat;
-                           background-position: center;
-                           background-size: cover;
-                        }
+								.bg-img-fotbar {
+									background-image: url("assets/img/fotbar.webp");
+									background-repeat: no-repeat;
+									background-position: center;
+									background-size: cover;
+								}
 							</style>
 							<div class="flex flex-col justify-center">
 								<div class="h-3/5 bg-img-fotbar pb-10">
@@ -333,15 +333,15 @@
 									</span>
 								</div>
 								<div
-									class="h-2/5 space-x-2 flex items-end pr-24 2xl:pt-28 -mt-5 2xl:-mt-24"
+									class="h-2/5 space-x-2 flex items-end pr-24 2xl:pt-28 lg:-mt-16 2xl:-mt-24"
 								>
-									<p class="2xl:text-xl">
+									<p class="2xl:text-xl lg:pb-36 xl:pb-0">
 										Rumah Keju Jogja mempunyai misi mengedukasi
 										masyarakat tentang keju melalui Workshop cara
 										membuat keju. Gabung bersama kami ciptakan kejumu
 										sendiri!
 									</p>
-									<div class="flex space-x-12 ">
+									<div class="flex space-x-12">
 										<div
 											class="mt-18 2xl:mt-28 w-48 h-48 2xl:w-72 2xl:h-72 rounded-3xl image-cropper-2 bg-gray-700"
 										>
@@ -360,7 +360,7 @@
 									</div>
 								</div>
 								<div class="flex pt-4 2xl:pt-8">
-									<h2 class="text-3xl font-bold w-2/5">
+									<h2 class="text-xl lg:text-3xl font-bold w-2/5">
 										Gabung bersama kami <br />
 										ciptakan kejumu sendiri!
 									</h2>
@@ -457,25 +457,52 @@
 				</button>
 			</div>
 
-			<section id="hero-1" class="hidden mb-5 lg:mx-20 2xl:px-24">
+         <!-- Mobile -->
+			<section id="hero-1" class="lg:hidden mb-5 w-screen overflow-x-hidden">
 				<style>
-					.image-cropper {
-						/* width: 100px;
-                  height: 100px; */
-						position: relative;
+					.image-cropper-sm {
+						/* width: 12em;
+                  height: 12em;
+						position: relative; */
+						z-index: 0;
 						overflow: hidden;
 						border-radius: 50%;
+						position: absolute;
+						width: 19em;
+						height: 19em;
+						top: -5em;
+						right: -5em;
+						/* opacity: 30%; */
 					}
-					.image-cropper img {
+					.image-cropper-sm img {
 						display: inline;
-						margin: 0 auto;
+						/* margin: 0 auto; */
 						height: 100%;
 						width: auto;
 					}
 				</style>
-				<div class="flex flex-col justify-start px-6 space-y-6 w-2/5">
+
+				<div class="orn-container z-0">
+					<div class="image-cropper-sm h-1/6">
+						<img src="assets/img/cheese-platter.webp" class="rounded" />
+					</div>
+					<img
+						style="bottom: 6em"
+						class="orn-equality"
+						src="assets/img/ornamen/equality.png"
+						alt="equality-core"
+					/>
+					<img
+						style="bottom: -4em"
+						class="orn-natural"
+						src="assets/img/ornamen/natural.png"
+						alt="natural-core"
+					/>
+				</div>
+
+				<div class="flex flex-col px-6 space-y-6">
 					<div class="flex space-x-2">
-						<div class="flex" style="margin-left: -1em">
+						<div class="flex">
 							<img
 								src="/assets/icon/Halal.svg"
 								height="64"
@@ -494,92 +521,79 @@
 							<!-- <span>Badan <br> POM</span> -->
 						</div>
 					</div>
-					<h1 class="text-7xl font-bold text-orange-rkj">
+					<!-- <h1 class="text-7xl font-bold text-orange-rkj">
 						Keju <br />
 						Natural
-					</h1>
-					<h2 class="text-xl text-orange-rkj">
-						Real People Eat Real Cheese
+					</h1> -->
+					<h2 class="z-30 font-bold text-3xl text-orange-rkj">
+						Real People <br />
+						Eat Real Cheese
 					</h2>
-					<p>
+					<p class="text-justify">
 						Rumah Keju Jogja hadir untuk kamu pecinta keju sejati. Dengan
 						setiap gigitan, kamu akan merasakan kelezatan keju alami yang
 						kaya rasa dan teksturnya yang autentik
 					</p>
-					<div class="">
-						<a href="" class="bg-orange-rkj text-white rounded-full p-4"
-							>Order Sekarang</a
+					<a href="" class="text-white">
+						<div
+							class="flex justify-center w-full bg-orange-rkj rounded-full p-4"
 						>
-					</div>
+							Order Sekarang
+						</div>
+					</a>
 				</div>
-				<div class="flex justify-center w-3/5">
-					<div class="image-cropper">
-						<img src="assets/img/cheese-platter.webp" class="rounded" />
-						<!-- <img src="https://via.placeholder.com/150" class="rounded" /> -->
-					</div>
-				</div>
+				<!-- <div class="flex justify-center w-3/5">
+				</div> -->
 			</section>
-			<section id="hero-2" class="hidden lg:mx-20 2xl:pr-28 pl-4">
+
+			<section id="hero-2" class="lg:hidden z-30">
 				<style>
-					.image-cropper-2 {
+					.image-cropper-2-sm {
 						/* width: 100px;
                   height: 100px; */
 						position: relative;
 						overflow: hidden;
 						/* border-radius: 50%; */
 					}
-					.image-cropper-2 img {
+					.image-cropper-2-sm img {
 						display: inline;
 						margin: 0 auto;
 						height: 100%;
 						/* width: auto; */
 					}
 				</style>
-				<div class="flex w-2/5 h-3/4">
+				<!-- <div class="flex w-2/5 h-3/4">
 					<div
 						style="height: 75vh"
 						class="w-full 2xl:ml-24 rounded-3xl image-cropper-2 bg-gray-700"
 					>
 						<img class="w-full" src="https://via.placeholder.com/150" />
 					</div>
-				</div>
+				</div> -->
 				<div
-					class="flex flex-col justify-start pl-6 space-y-4 2xl:space-y-12 w-auto"
+					class=" flex flex-col justify-start p-6 space-y-6 2xl:space-y-12 w-auto"
 				>
-					<h1 class="text-7xl font-bold text-orange-rkj">
-						Nikmati <br />
-						Keju Sejati
+					<h1 class="z-30 lowercase text-center text-5xl font-bold text-orange-rkj bg-white/70 rounded-xl p-2">
+						Nikmati.
+						Keju.Sejati
 					</h1>
-					<p class="2xl:text-xl">
+					<p class="2xl:text-xl bg-white/70 rounded-xl p-2 z-30 text-justify">
 						Rasakan sentuhan keju yang autentik, meleleh dalam kehangatan
 						yang memanjakan. Rumah Keju Jogja hadir untuk memberikan
 						pengalaman kuliner yang tak terlupakan memenuhi keinginan.
 					</p>
-					<div class="flex space-x-12" style="margin-left: -6em">
-						<div
-							class="w-48 h-48 2xl:w-72 2xl:h-72 rounded-3xl image-cropper-2 bg-gray-700"
-						>
-							<img src="https://via.placeholder.com/150" />
-						</div>
-						<div
-							class="w-48 h-48 2xl:w-72 2xl:h-72 rounded-3xl image-cropper-2 bg-gray-700"
-						>
-							<img src="https://via.placeholder.com/150" />
-						</div>
-						<div
-							class="w-48 h-48 2xl:w-72 2xl:h-72 rounded-3xl image-cropper-2 bg-gray-700"
-						>
-							<img src="https://via.placeholder.com/150" />
-						</div>
-					</div>
-					<div class="flex justify-end">
+               <div class="flex justify-center "><img class="w-3/4 h-3/4 rounded-xl" src="https://via.placeholder.com/150" alt=""></div>
+               <div class="flex justify-center "><img class="w-3/4 h-3/4 rounded-xl" src="https://via.placeholder.com/150" alt=""></div>
+               <div class="flex justify-center "><img class="w-3/4 h-3/4 rounded-xl" src="https://via.placeholder.com/150" alt=""></div>
+					
+					<div class="flex justify-center">
 						<a href="" class="bg-orange-rkj text-white rounded-full p-4"
 							>Order Sekarang</a
 						>
 					</div>
 				</div>
 			</section>
-			<section id="hero-3" class="hidden lg:mx-20 2xl:px-28 pl-4">
+			<section id="hero-3" class="lg:hidden hidden">
 				<style>
 					.image-cropper-2 {
 						/* width: 100px;
@@ -646,5 +660,21 @@
 			</section>
 		</div>
 		<script src="/include/js/flowbite/dist/flowbite.min.js"></script>
-	</body>
+      <script>
+         // Get the navbar element
+         const navbar = document.getElementById('navbar');
+
+         // Listen for scroll events
+         window.addEventListener('scroll', function() {
+         // Check if the scroll position is greater than 20px
+         if (window.scrollY > 20) {
+            // Add a class to change the background color
+            navbar.classList.add('bg-white'); // Change to the desired Tailwind CSS class
+         } else {
+            // Remove the class if the scroll position is less than 20px
+            navbar.classList.remove('bg-white');
+         }
+         });
+      </script>
+   </body>
 </html>
