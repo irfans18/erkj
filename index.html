@@ -131,42 +131,6 @@
 			</div>
 		</section>
 		<div class="content">
-			<style>
-				/* body {
-					overflow-x: hidden;
-				}
-				.orn-container {
-					z-index: 0;
-					opacity: 60%;
-				}
-				.orn-natural {
-					z-index: 0;
-					position: absolute;
-					width: 20em;
-					height: 20em;
-					bottom: 0;
-					right: -9em;
-				}
-
-				.orn-equality {
-					z-index: 0;
-					position: absolute;
-					width: 13em;
-					height: 13em;
-					bottom: 8em;
-					transform: scale(-1, 1);
-					left: -70px;
-				}
-
-				.orn-trace {
-					z-index: 0;
-					position: absolute;
-					width: 19em;
-					height: 19em;
-					top: 1em;
-					right: -5em;
-				} */
-			</style>
 
 			<div class="orn-container">
 				<div class="w-full h-full">
@@ -190,7 +154,7 @@
 			<div
 				id="default-carousel"
 				class="relative w-full z-30"
-				data-carousel="slide"
+				data-carousel="static"
 			>
 				<!-- Carousel wrapper -->
 				<div class="relative h-56 overflow-hidden rounded-lg md:h-[80vh]">
@@ -352,44 +316,50 @@
 									height: 100%;
 									/* width: auto; */
 								}
+                        .bg-img-fotbar{
+                           background-image: url('assets/img/fotbar.webp');
+                           background-repeat: no-repeat;
+                           background-position: center;
+                           background-size: cover;
+                        }
 							</style>
 							<div class="flex flex-col justify-center">
-								<div class="h-3/5 bg-gray-300">
+								<div class="h-3/5 bg-img-fotbar pb-10">
 									<span
-										class="text-white text-7xl flex text-center justify-center p-4 2xl:p-6"
+										class="text-white text-7xl flex text-center justify-center items-start pb-20 pt-0 2xl:p-6"
 									>
 										Workshop <br />
 										Rumah Keju Jogja
 									</span>
 								</div>
 								<div
-									class="h-2/5 space-x-2 flex items-end pr-24 2xl:pt-28"
+									class="h-2/5 space-x-2 flex items-end pr-24 2xl:pt-28 -mt-5 2xl:-mt-24"
 								>
-									<p class="2xl:text-xl pb-12">
+									<p class="2xl:text-xl">
 										Rumah Keju Jogja mempunyai misi mengedukasi
 										masyarakat tentang keju melalui Workshop cara
 										membuat keju. Gabung bersama kami ciptakan kejumu
 										sendiri!
 									</p>
-									<div class="flex space-x-12 pt-8 pb-16">
+									<div class="flex space-x-12 ">
 										<div
-											class="w-48 h-48 2xl:w-72 2xl:h-72 rounded-3xl image-cropper-2 bg-gray-700"
+											class="mt-18 2xl:mt-28 w-48 h-48 2xl:w-72 2xl:h-72 rounded-3xl image-cropper-2 bg-gray-700"
 										>
 											<img src="https://via.placeholder.com/150" />
 										</div>
 										<div
-											class="w-48 h-48 2xl:w-72 2xl:h-72 rounded-3xl image-cropper-2 bg-gray-700"
+											class="mt-18 2xl:mt-28 w-48 h-48 2xl:w-72 2xl:h-72 rounded-3xl image-cropper-2 bg-gray-700"
 										>
 											<img src="https://via.placeholder.com/150" />
 										</div>
 										<div
-											class="w-48 h-48 2xl:w-72 2xl:h-72 rounded-3xl image-cropper-2 bg-gray-700"
+											class="mt-18 2xl:mt-28 w-48 h-48 2xl:w-72 2xl:h-72 rounded-3xl image-cropper-2 bg-gray-700"
 										>
 											<img src="https://via.placeholder.com/150" />
 										</div>
 									</div>
 								</div>
-								<div class="flex">
+								<div class="flex pt-4 2xl:pt-8">
 									<h2 class="text-3xl font-bold w-2/5">
 										Gabung bersama kami <br />
 										ciptakan kejumu sendiri!
@@ -412,21 +382,21 @@
 				>
 					<button
 						type="button"
-						class="w-3 h-3 rounded-full bg-gray-400/30"
+						class="w-3 h-3 rounded-full bg-gray-400/40"
 						aria-current="true"
 						aria-label="Slide 1"
 						data-carousel-slide-to="0"
 					></button>
 					<button
 						type="button"
-						class="w-3 h-3 rounded-full bg-gray-400/30"
+						class="w-3 h-3 rounded-full bg-gray-400/40"
 						aria-current="false"
 						aria-label="Slide 2"
 						data-carousel-slide-to="1"
 					></button>
 					<button
 						type="button"
-						class="w-3 h-3 rounded-full bg-gray-400/30"
+						class="w-3 h-3 rounded-full bg-gray-400/40"
 						aria-current="false"
 						aria-label="Slide 3"
 						data-carousel-slide-to="1"
@@ -544,7 +514,8 @@
 				</div>
 				<div class="flex justify-center w-3/5">
 					<div class="image-cropper">
-						<img src="https://via.placeholder.com/150" class="rounded" />
+						<img src="assets/img/fotbar.webp" class="rounded" />
+						<!-- <img src="https://via.placeholder.com/150" class="rounded" /> -->
 					</div>
 				</div>
 			</section>
