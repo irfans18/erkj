@@ -1234,10 +1234,6 @@ input:checked + .toggle-bg {
   height: 100vh;
 }
 
-.h-\[25\] {
-  height: 25;
-}
-
 .max-h-10 {
   max-height: 2.5rem;
 }
@@ -1284,10 +1280,6 @@ input:checked + .toggle-bg {
 
 .w-full {
   width: 100%;
-}
-
-.w-screen {
-  width: 100vw;
 }
 
 .flex-1 {
@@ -1531,6 +1523,10 @@ input:checked + .toggle-bg {
   background-color: rgb(156 163 175 / 0.2);
 }
 
+.bg-gray-400\/40 {
+  background-color: rgb(156 163 175 / 0.4);
+}
+
 .bg-gray-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
@@ -1560,13 +1556,12 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / 0.5);
 }
 
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
 .bg-gray-400\/50 {
   background-color: rgb(156 163 175 / 0.5);
+}
+
+.bg-gray-400\/30 {
+  background-color: rgb(156 163 175 / 0.3);
 }
 
 .bg-opacity-50 {
@@ -1820,6 +1815,46 @@ input:checked + .toggle-bg {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+body {
+  overflow-x: hidden;
+}
+
+.orn-container {
+  z-index: 0;
+  opacity: 60%;
+}
+
+.orn-natural {
+  z-index: 0;
+  position: absolute;
+  width: 20em;
+  height: 20em;
+  bottom: 0;
+  right: -9em;
+  /* rotate: -65deg; */
+}
+
+.orn-equality {
+  z-index: 0;
+  position: absolute;
+  width: 13em;
+  height: 13em;
+  bottom: 8em;
+  transform: scale(-1, 1);
+  /* transform: rotateX(0deg) rotateY(0deg); */
+  left: -70px;
+  /* rotate: -65deg; */
+}
+
+.orn-trace {
+  z-index: 0;
+  position: absolute;
+  width: 19em;
+  height: 19em;
+  top: 1em;
+  right: -5em;
+}
+
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -1833,11 +1868,6 @@ input:checked + .toggle-bg {
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-gray-400:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-orange-400:hover {
