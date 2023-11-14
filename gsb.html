@@ -14,9 +14,9 @@
 		></script>
 	</head>
 	<body>
-		<!-- <section
+		<section
 			class="h-full w-full border-box transition-all duration-500 linear lg:px-24 md:px-20 px-8 py-8 bg-white"
-			style="border-bottom: 1px solid #ebebeb"
+			style="border-bottom: 1px solid #ebebeb; z-index: 0;"
 		>
 			<style>
 				@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -124,68 +124,51 @@
 					</div>
 				</div>
 			</div>
-		</section> -->
-		<!-- <style>
-			.orn {
-				position: absolute;
-				width: 320px;
-				height: 320px;
-				bottom: 0;
-				right: -100px;
-            rotate: -65deg;
-			}
-		</style>
-		<div class="w-full h-screen">
-         <span>asdasd</span>
-			<img class="orn" src="assets/img/cheese_svgrepo.svg" alt="" />
-		</div>
-      <div class="h-screen"></div> -->
-
+		</section>
 		<style>
-			.container {
-				width: 100%;
-				height: 100vh;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				overflow: hidden;
-				position: relative;
-			}
-
-			img {
-				display: none;
+         body{
+            overflow-x: hidden;
+         }
+         .orn-container {
+            z-index: 0;
+         }
+			.orn-natural {
+            z-index: 0;
 				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: auto;
+				width: 20em;
+				height: 20em;
+				bottom: 0;
+				right: -9em;
+            /* rotate: -65deg; */
 			}
-		</style>
-		<div class="h-screen">
-         <div class="container">
-            <img id="img1" src="assets/img/img1.svg" style="rotate: 90deg;" alt="Image 1" />
-            <img id="img2" src="assets/img/img2.svg" alt="Image 2" />
-         </div>
-         <div class="container">
-            <img id="img1" src="assets/img/img1.svg" style="rotate: 90deg;" alt="Image 1" />
-            <img id="img2" src="assets/img/img2.svg" alt="Image 2" />
-         </div>
-      </div>
-		<script>
-			document.addEventListener("DOMContentLoaded", function () {
-				const img1 = document.getElementById("img1");
-				const img2 = document.getElementById("img2");
 
-				window.addEventListener("scroll", function () {
-					if (window.scrollY >= 100) {
-						img1.style.display = "none";
-						img2.style.display = "block";
-					} else {
-						img1.style.display = "block";
-						img2.style.display = "none";
-					}
-				});
-			});
-		</script>
+         .orn-equality {
+            z-index: 0;
+            position: absolute;
+				width: 13em;
+				height: 13em;
+				bottom: 8em;
+            transform: scale(-1, 1);
+            /* transform: rotateX(0deg) rotateY(0deg); */
+				left: -70px;
+            /* rotate: -65deg; */
+         }
+
+         .orn-trace{
+            z-index: 0;
+            position: absolute;
+				width: 19em;
+				height: 19em;
+				top: 1em;
+				right: -5em;
+         }
+		</style>
+		<div class="w-full h-full">
+			<img class="orn-trace" src="assets/img/ornamen/traceability.png" alt="natural-core" />
+			<img class="orn-equality" src="assets/img/ornamen/equality.png" alt="natural-core" />
+			<img class="orn-natural" src="assets/img/ornamen/natural.png" alt="natural-core" />
+		</div>
+      <!-- <div class="h-screen"></div> -->
+
 	</body>
 </html>
