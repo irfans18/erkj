@@ -111,7 +111,7 @@ footerTemplate.innerHTML = `
 					<div
 						class="md:ml-14 flex flex-col md:flex-row md:justify-evenly md:space-x-5"
 					>
-						<div class="w-1/4 py-2">
+						<div class="w-full lg:w-1/4 py-2">
 							<h4 class="title-font font-semibold text-xl mb-2">
 								Halaman
 							</h4>
@@ -132,7 +132,7 @@ footerTemplate.innerHTML = `
 								</li>
 							</nav>
 						</div>
-						<div class="w-1/4 py-2">
+						<div class="w-full lg:w-1/4 py-2">
 							<h4 class="title-font text-xl font-semibold mb-2">
 								Online Shop
 							</h4>
@@ -146,7 +146,7 @@ footerTemplate.innerHTML = `
 								</li>
 							</nav>
 						</div>
-						<div class="w-2/4 py-2">
+						<div class="w-full lg:w-2/4 py-2">
 							<h4 class="title-font text-xl font-semibold mb-2">
 								Alamat
 							</h4>
