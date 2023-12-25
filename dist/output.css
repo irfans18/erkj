@@ -1945,6 +1945,11 @@ input:checked + .toggle-bg {
   padding-bottom: 5rem;
 }
 
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -2494,8 +2499,20 @@ body {
     margin-left: 3.5rem;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:h-\[80vh\] {
     height: 80vh;
+  }
+
+  .md\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:flex-row {
@@ -2510,6 +2527,12 @@ body {
     --tw-space-x-reverse: 0;
     margin-right: calc(1.25rem * var(--tw-space-x-reverse));
     margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
   .md\:px-16 {
@@ -2571,6 +2594,10 @@ body {
 
   .lg\:h-\[85vh\] {
     height: 85vh;
+  }
+
+  .lg\:h-\[80vh\] {
+    height: 80vh;
   }
 
   .lg\:w-1\/5 {
@@ -2662,6 +2689,11 @@ body {
     padding-bottom: 0px;
   }
 
+  .lg\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
   .lg\:pb-24 {
     padding-bottom: 6rem;
   }
@@ -2681,6 +2713,18 @@ body {
 }
 
 @media (min-width: 1280px) {
+  .xl\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .xl\:mt-44 {
+    margin-top: 11rem;
+  }
+
+  .xl\:mt-40 {
+    margin-top: 10rem;
+  }
+
   .xl\:h-\[28rem\] {
     height: 28rem;
   }
@@ -2791,6 +2835,10 @@ body {
 
   .\32xl\:pt-8 {
     padding-top: 2rem;
+  }
+
+  .\32xl\:pt-20 {
+    padding-top: 5rem;
   }
 
   .\32xl\:text-xl {
