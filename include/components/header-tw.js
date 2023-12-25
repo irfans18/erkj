@@ -1,199 +1,136 @@
-const headerTemplate = document.createElement('template');
+const headerTemplate = document.createElement("template");
 
 headerTemplate.innerHTML = `
    <style>
-      /* #Mega Menu Styles
-      –––––––––––––––––––––––––––––––––––––––––––––––––– */
-      .mega-menu {
-         display: none;
-         left: 0;
-         position: absolute;
-         text-align: left;
-         width: 100%;
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      /* .navbar-1-5 .btn-fill {
+            background-color: #32735f;
+            transition: 0.3s;
+         }
+         .navbar-1-5 .btn-fill:hover {
+            background-color: #2a7e65;
+            transition: 0.3s;
+         } */
+      .navbar-1-5 nav a.nav-link:hover,
+      .navbar-1-5 nav a.nav-link.active {
+         font-weight: 500;
+         transition: 0.3s;
       }
-
-      .normal-menu {
-         display: none;
-         /* left: 0; */
-         position: absolute;
-         text-align: left;
-         width: 386px;
+      .navbar-1-5 nav a.nav-link {
+         /* color: #F17714; */
+         transition: 0.3s;
       }
-
-      /* #hoverable Class Styles
-      –––––––––––––––––––––––––––––––––––––––––––––––––– */
-      .hoverable {
-         position: static;
-      }
-
-      .hoverable > a:after {
-         content: "\\25BC";
-         font-size: 10px;
-         padding-left: 6px;
-         position: relative;
-         top: -1px;
-      }
-
-      .hoverable:hover .mega-menu {
+      .navbar-1-5 #menu-toggle:checked + #menu,
+      .navbar-1-5 #menu-toggle:checked + #menu + #menu {
          display: block;
-      }
-
-      .hoverable:hover .normal-menu {
-         display: block;
-      }
-
-      .color-orange {
-         color:#F17714;
-      }
-
-      .bd-orange{
-         border-color: #F17714;
-      }
-      .bg-orange{
-         background-color: #F17714;
+         background-color: white;
       }
    </style>
-   <header>
-      <nav
-         class="px-6 py-2 shadow-md md:flex"
-         style="background-color: #fff"
+   <header
+      class="navbar-1-5 max-h-10"
+      style="font-family: 'Poppins', sans-serif"
+   >
+      <div
+         class="container mx-auto flex flex-wrap flex-row items-center justify-between"
       >
-         <div class="container flex flex-wrap justify-between items-center">
-            <div
-               class="text-3xl text-gray-800 font-bold hover:text-gray-800"
+         <nav
+            class="lg:flex hidden lg:w-2/5 flex-wrap items-center text-base md:ml-auto lg:space-y-0 space-y-6 lg:space-x-2 space-x-0"
+         >
+            <a
+               href="index.html"
+               class="text-white bg-orange-rkj rounded-full p-0 lg:p-2 nav-link"
+               >Beranda</a
             >
-               <a href="index.html" class="flex items-center">
-                  <div class="flex md:block text-center ml-2 py-1">
-                     <div class="flex block items-center">
-                        <img
-                           src="/assets/img/logo.png"
-                           alt="UNTAG Logo"
-                           class="ml-3 md:ml-0 2xl:ml-6 h-10"
-                        />
-                        <div class="text-left flex items-center">
-                           <span
-                              class="px-4 text-sm md:block font-semibold text-white"
-                           >
-                              Universitas
-                              <br />
-                              17 Agustus 1945 Samarinda
-                           </span>
-                           <span
-                              class="px-4 text-sm md:block font-semibold text-white"
-                           ></span>
-                        </div>
-                     </div>
-                  </div>
-               </a>
-            </div>
-            <div class="md:hidden">
-               <button
-                  type="button"
-                  class="block text-gray-900 hover:text-gray-700 focus:text-gray-700 focus:outline-none"
+            <a
+               href="index.html#catalog"
+               class="text-orange-rkj hover:bg-gray-100 rounded-lg p-0 lg:p-2 nav-link"
+               >Produk</a
+            >
+            <a
+               href="https://api.whatsapp.com/send/?phone=6282221045069&text=Halo+Rumah+Keju+Jogja+%2C+Saya+ingin+bertanya+seputar+pelatihan/edukasi+KEJUGJA+Artisan+Cheese&type=phone_number&app_absent=0"
+               class="text-orange-rkj hover:bg-gray-100 rounded-lg p-0 lg:p-2 nav-link"
+               >Workshop</a
+            >
+            <a
+               href="about.html"
+               class="text-orange-rkj hover:bg-gray-100 rounded-lg p-0 lg:p-2 nav-link"
+               >About Us</a
+            >
+         </nav>
+         <a
+            href="index.html"
+            class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center lg:items-center lg:justify-center"
+         >
+            <img src="assets/logo.png" width="120" alt="" />
+         </a>
+         <label for="menu-toggle" class="cursor-pointer lg:hidden block">
+            <svg
+               class="w-6 h-6"
+               fill="none"
+               stroke="#092A33"
+               viewBox="0 0 24 24"
+               xmlns="http://www.w3.org/2000/svg"
+            >
+               <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+               ></path>
+            </svg>
+         </label>
+         <input class="hidden" type="checkbox" id="menu-toggle" />
+         <div
+            class="hidden w-full flex-wrap items-center text-base justify-center"
+            id="menu"
+         >
+            <nav
+               class="text-center lg:space-x-12 space-x-0 lg:flex items-center justify-between text-base pt-8 lg:pt-0 lg:space-y-0 space-y-6"
+            >
+               <a href="index.html" class="nav-link block active"
+                  >Beranda</a
                >
-                  <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-                     <path
-                        d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                     />
-                  </svg>
-               </button>
-            </div>
+               <a href="index.html#catalog" class="nav-link block"
+                  >Produk</a
+               >
+               <a
+                  href="https://api.whatsapp.com/send?phone=6289670155097&text=Hallo kak. Saya [nama] tertarik dengan kejugja, Boleh minta info lebih lanjut terkait produk/workshop?"
+                  class="nav-link block"
+                  >Workshop</a
+               >
+               <a href="about.html" class="nav-link block">About Us</a>
+            </nav>
          </div>
          <div
-            class="w-full pb-2 md:flex md:items-center md:justify-end md:pb-0"
+            class="lg:w-2/5 lg:inline-flex text-center py-4 lg:justify-end ml-0 hidden lg:items-center w-full"
+            id="menu"
          >
-            <div class="flex flex-col px-2 md:flex-row w-full">
-               <ul class="flex flex-nowrap">
-                  <li>
-                     <a
-                        href="index.html"
-                        class="color-orange relative block p-4 text-sm text-white lg:text-base font-bold hover:text-white"
-                        aria-current="page"
-                     >
-                        Beranda
-                     </a>
-                  </li>
-
-                  <li>
-                     <a
-                        href="index.html"
-                        class="color-orange relative block p-4 text-sm text-white lg:text-base font-bold hover:text-gray-300"
-                        aria-current="page"
-                     >
-                        Produk
-                     </a>
-                  </li>
-
-                  <li>
-                     <a
-                        href="index.html"
-                        class="relative block p-4 text-sm text-white lg:text-base font-bold hover:text-gray-300"
-                        aria-current="page"
-                        style="color:#F17714"
-                     >
-                        Workshop
-                     </a>
-                  </li>
-
-                  <li>
-                     <a
-                        href="index.html"
-                        class="relative block p-4 text-sm text-white lg:text-base font-bold hover:text-gray-300"
-                        aria-current="page"
-                        style="color:#F17714"
-                     >
-                        About Us
-                     </a>
-                  </li>
-
-               </ul>
-            </div>
-            <div class="flex flex-col px-2 md:flex-row">
-               <div class="hidden relative mr-3 md:ml-3 md:mt-2 md:block">
-                  <div
-                     class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
-                  >
-                     <svg
-                        class="w-5 h-5 color-orange"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                     >
-                        <path
-                           fill-rule="evenodd"
-                           d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                           clip-rule="evenodd"
-                        ></path>
-                     </svg>
-                  </div>
-                  <input
-                     type="text"
-                     id="search-query"
-                     class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border bd-orange sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                     
-                  />
-               </div>
-            </div>
+            <a
+               href="https://api.whatsapp.com/send?phone=6289670155097&text=Hallo kak. Saya [nama] tertarik dengan kejugja, Boleh minta info lebih lanjut terkait produk/workshop?"
+               class="bg-orange-rkj hover:bg-orange-400 text-white items-center border-0 py-3 px-8 focus:outline-none rounded-2xl font-medium text-base mt-6 lg:mt-0"
+            >
+               Contact Us
+            </a>
          </div>
-      </nav>
+      </div>
    </header>
 `;
 
 class Header extends HTMLElement {
-   constructor() {
-   super(); 
-   }
+	constructor() {
+		super();
+	}
 
-   connectedCallback() {
-      const tailwind = document.querySelector('link[href*="tailwind"]');
-      const shadowRoot = this.attachShadow({ mode: 'closed' });
+	connectedCallback() {
+		const tailwind = document.querySelector('link[href*="output"]');
+		const shadowRoot = this.attachShadow({ mode: "closed" });
 
-      if (tailwind) {
-      shadowRoot.appendChild(tailwind.cloneNode());
-      }
+		if (tailwind) {
+			shadowRoot.appendChild(tailwind.cloneNode());
+		}
 
-      shadowRoot.appendChild(headerTemplate.content);
-   }
+		shadowRoot.appendChild(headerTemplate.content);
+	}
 }
 
-customElements.define('header-component', Header);
+customElements.define("header-component", Header);
