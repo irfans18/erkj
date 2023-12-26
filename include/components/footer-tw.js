@@ -6,10 +6,10 @@ footerTemplate.innerHTML = `
 			style="font-family: 'Poppins', sans-serif"
 		>
 			<div class="pt-12 pb-16 mx-12 2xl:px-48">
-				<div class="flex flex-wrap lg:flex-nowrap">
+				<div class="flex flex-wrap md:flex-nowrap">
 					<div class="max-w-xs py-2">
 						<div class="mb-2">
-							<img class="w-full" src="assets/logo.png" alt="" />
+							<img class="w-3/4" src="assets/logo.png" alt="" />
 
 							<h3 class="text-lg">PT. RUMAH KEJU JOGJA</h3>
 							<h3 class="italic">Real People, Eat Real Cheese</h3>
@@ -17,7 +17,7 @@ footerTemplate.innerHTML = `
 						<div class="my-8">
 							<h4 class="text-sm font-bold">Sosial Media</h4>
 							<div
-								class="flex items-center mt-2 lg:mb-0 md:mb-0 space-x-5"
+								class="flex items-center mt-2 md:mb-0 space-x-5"
 								style="cursor: pointer"
 							>
 								<a
@@ -111,7 +111,7 @@ footerTemplate.innerHTML = `
 					<div
 						class="md:ml-14 flex flex-col md:flex-row md:justify-evenly md:space-x-5"
 					>
-						<div class="w-full lg:w-1/4 py-2">
+						<div class="w-full md:w-1/4 py-2">
 							<h4 class="title-font font-semibold text-xl mb-2">
 								Halaman
 							</h4>
@@ -132,7 +132,7 @@ footerTemplate.innerHTML = `
 								</li>
 							</nav>
 						</div>
-						<div class="w-full lg:w-1/4 py-2">
+						<div class="w-full md:w-1/4 py-2">
 							<h4 class="title-font text-xl font-semibold mb-2">
 								Online Shop
 							</h4>
@@ -146,7 +146,7 @@ footerTemplate.innerHTML = `
 								</li>
 							</nav>
 						</div>
-						<div class="w-full lg:w-2/4 py-2">
+						<div class="w-full md:w-2/4 py-2">
 							<h4 class="title-font text-xl font-semibold mb-2">
 								Alamat
 							</h4>
@@ -161,7 +161,7 @@ footerTemplate.innerHTML = `
 									Daerah Istimewa Yogyakarta 55581
 								</h4>
 								<iframe
-									class="w-max lg:w-full 2xl:w-[32rem] h-max lg:h-full 2xl:h-[15rem]"
+									class="w-max md:w-full 2xl:w-[32rem] h-max md:h-full 2xl:h-[15rem]"
 									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15813.484923044247!2d110.35902605731363!3d-7.750391840712185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a592921b0b6cb%3A0x21c060e6e71c7d55!2sRumah%20Keju%20Jogja%20(KEJUGJA)!5e0!3m2!1sen!2sid!4v1703490687188!5m2!1sen!2sid"
 									style="border: 0"
 									allowfullscreen=""
@@ -175,10 +175,10 @@ footerTemplate.innerHTML = `
 			</div>
 			<div class="border-color mx-auto">
 				<div
-					class="bg-orange-200 py-3.5 lg:px-40 flex flex-col lg:flex-row justify-center text-center items-center space-y-5 lg:space-y-0"
+					class="bg-orange-200 py-3.5 md:px-40 flex flex-col md:flex-row justify-center text-center items-center space-y-5 md:space-y-0"
 				>
 					<nav
-						class="flex lg:flex-row flex-col items-center text-base font-light"
+						class="flex md:flex-row flex-col items-center text-base font-light"
 					>
 						<p>Copyright © 2024 - Rumah Keju Jogja</p>
 					</nav>
