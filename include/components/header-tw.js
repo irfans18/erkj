@@ -38,22 +38,24 @@ headerTemplate.innerHTML = `
          >
             <a
                href="index.html"
-               class="text-white bg-orange-rkj rounded-full p-0 lg:p-2 nav-link"
+               class="text-orange-rkj hover:text-white hover:bg-orange-rkj rounded-lg p-0 lg:p-2 nav-link"
+
                >Beranda</a
             >
             <a
                href="index.html#catalog"
-               class="text-orange-rkj hover:bg-gray-100 rounded-lg p-0 lg:p-2 nav-link"
+               class="text-orange-rkj hover:text-white hover:bg-orange-rkj rounded-lg p-0 lg:p-2 nav-link"
                >Produk</a
             >
             <a
+               target="_blank"
                href="https://api.whatsapp.com/send/?phone=6282221045069&text=Halo+Rumah+Keju+Jogja+%2C+Saya+ingin+bertanya+seputar+pelatihan/edukasi+KEJUGJA+Artisan+Cheese&type=phone_number&app_absent=0"
-               class="text-orange-rkj hover:bg-gray-100 rounded-lg p-0 lg:p-2 nav-link"
+               class="text-orange-rkj hover:text-white hover:bg-orange-rkj rounded-lg p-0 lg:p-2 nav-link"
                >Workshop</a
             >
             <a
                href="about.html"
-               class="text-orange-rkj hover:bg-gray-100 rounded-lg p-0 lg:p-2 nav-link"
+               class="text-orange-rkj hover:text-white hover:bg-orange-rkj rounded-lg p-0 lg:p-2 nav-link"
                >About Us</a
             >
          </nav>
@@ -106,6 +108,7 @@ headerTemplate.innerHTML = `
             id="menu"
          >
             <a
+               target="_blank"
                href="https://api.whatsapp.com/send?phone=6289670155097&text=Hallo kak. Saya [nama] tertarik dengan kejugja, Boleh minta info lebih lanjut terkait produk/workshop?"
                class="bg-orange-rkj hover:bg-orange-400 text-white items-center border-0 py-3 px-8 focus:outline-none rounded-2xl font-medium text-base mt-6 lg:mt-0"
             >
