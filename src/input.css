@@ -43,3 +43,9 @@ body {
 .about-1 {
 	background: url("assets/img/about/mr_simple.webp");
 } */
+
+.bg-banner-product {
+	background: url("../assets/img/about/banner-product.jpg");
+	background-size: cover;
+	background-position: center;
+}

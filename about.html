@@ -1,62 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Rumah Keju Jogja</title>
 
-		<link rel="icon" href="assets/logo.png" />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Rumah Keju Jogja</title>
 
-		<!-- Tailwind CSS -->
-		<link href="/dist/output.css" rel="stylesheet" />
+	<link rel="icon" href="assets/logo.png" />
 
-		<link
-			rel="stylesheet"
-			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-		/>
-		<script src="include/js/jquery-3.0.0.js"></script>
-		<link rel="stylesheet" href="include/css/floating-wa.css" />
+	<!-- Tailwind CSS -->
+	<link href="/dist/output.css" rel="stylesheet" />
 
-		<script
-			src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js"
-			defer
-		></script>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-			rel="stylesheet"
-		/>
-		<script
-			src="include/components/header-tw.js"
-			type="text/javascript"
-			defer
-		></script>
-		<script
-			src="include/components/footer-tw.js"
-			type="text/javascript"
-			defer
-		></script>
-	</head>
-	<body>
-		<div class="fab-container">
-			<div class="fab fab-icon-holder">
-				<i class="fa fa-whatsapp"></i>
-			</div>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+	<script src="include/js/jquery-3.0.0.js"></script>
+	<link rel="stylesheet" href="include/css/floating-wa.css" />
 
-			<ul class="fab-options">
-				<li>
-					<span class="fab-label">Admin</span>
-					<a
-						href="https://api.whatsapp.com/send?phone=6289670155097&text=Hallo kak. Saya [nama] tertarik dengan kejugja, Boleh minta info lebih lanjut terkait produk/workshop?"
-						target="_blank"
-					>
-						<div class="fab-icon-holder">
-							<i class="fa fa-whatsapp"></i>
-						</div>
-					</a>
-				</li>
-				<!-- <li>
+	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+	<script src="include/components/header-tw.js" type="text/javascript" defer></script>
+	<script src="include/components/footer-tw.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+	<div class="fab-container">
+		<div class="fab fab-icon-holder">
+			<i class="fa fa-whatsapp"></i>
+		</div>
+
+		<ul class="fab-options">
+			<li>
+				<span class="fab-label">Admin</span>
+				<a href="https://api.whatsapp.com/send?phone=6289670155097&text=Hallo kak. Saya [nama] tertarik dengan kejugja, Boleh minta info lebih lanjut terkait produk/workshop?"
+					target="_blank">
+					<div class="fab-icon-holder">
+						<i class="fa fa-whatsapp"></i>
+					</div>
+				</a>
+			</li>
+			<!-- <li>
 					<span class="fab-label">Admin Ruri</span>
 					<a
 						target="_blank"
@@ -67,7 +50,7 @@
 						</div>
 					</a>
 				</li> -->
-				<!-- <li>
+			<!-- <li>
                <span class="fab-label">Admin Rachma</span>
                <a href="https://api.whatsapp.com/send?phone=6281328657989&text=Hallo admin Rachma. Saya tertarik dengan kejugja, apakah promonya masih ada?" target="_blank">
                <div class="fab-icon-holder">
@@ -75,295 +58,344 @@
                </div>
                </a>
             </li> -->
-			</ul>
+		</ul>
+	</div>
+
+	<div id="header"
+		class="z-50 sticky top-0 h-full w-full border-box transition-all duration-500 linear lg:px-24 md:px-20 px-8 pb-8 rounded-b-2xl">
+		<header-component></header-component>
+		
+	</div>
+
+	<section id="testimoni">
+		<div class="bg-white rounded-xl w-full  space-y-6 py-6 lg:py-0 flex">
+			<h1 class="w-4/5 lg:text-5xl 2xl:text-7xl text-left text-black font-bold pt-20 2xl:pt-40 px-20 lg:px-24">
+				Kita <span class="text-orange-rkj">percaya</span> bahwa kita bisa <br> mewujudkan mandiri <span
+					class="text-orange-rkj">keju</span> <br> Indonesia
+			</h1>
+			<!-- <h1 class="block lg:hidden text-3xl text-center text-black font-bold pt-4 px-20">"Kita <span
+					class="text-orange-rkj">percaya</span> bahwa kita bisa mewujudkan mandiri <span
+					class="text-orange-rkj">keju</span> Indonesia"</h1> -->
+			<div class="hidden lg:block -ms-24"><img class="w-72" src="assets/img/ornamen/ornament.png" alt=""></div>
 		</div>
 
-		<div
-			id="header"
-			class="z-50 sticky top-0 h-full w-full border-box transition-all duration-500 linear lg:px-24 md:px-20 px-8 py-8"
-		>
-			<header-component></header-component>
+
+		<div class="h-[15vh]">
+			<h1 class="lg:text-5xl 2xl:text-6xl font-semibold px-44">Siapa <span class="text-orange-rkj ">kami</span>
+			</h1>
 		</div>
 
-		<section class="content">
-			<div class="hidden lg:inline orn-container">
-				<div class="w-full h-full">
-					<img
-						class="orn-trace"
-						src="assets/img/ornamen/traceability.png"
-						alt="traceability-core"
-					/>
-					<img
-						class="orn-equality"
-						src="assets/img/ornamen/equality.png"
-						alt="equality-core"
-					/>
-					<img
-						class="orn-natural"
-						src="assets/img/ornamen/natural.png"
-						alt="natural-core"
-					/>
+		<div class="w-screen">
+			<div class="text-2xl px-20 p-4 bg-orange-100 flex flex-col space-y-6 py-10">
+				<div class="flex space-x-10">
+					<div class="w-1/2">
+						<img class="-mt-24 mb-20 p-8 drop-shadow-2xl" src="assets/img/about/tim-rkj.jpg" alt="">
+					</div>
+					<p class="w-1/2 text-justify">
+						Rumah Keju Jogja merupakan usaha bersama dari sebuah komunitas pembuat keju artisan lokal. Usaha
+						ini
+						berawal dari Kerinduan kami yang sebagian besar adalah ibu rumah tangga, bisa menyediakan
+						makanan
+						yang sehat dan terjangkau, dalam hal ini keju.
+					</p>
+				</div>
+				<div class="flex space-x-10">
+					<p class="w-1/2 text-justify pt-16 mt-2">
+						Rumah Keju Jogja, berdiri 16 Februari 2018 merupakan komunitas kecil dari para pembelajar
+						tentang keju natural, berharap tumbuh bersama dari peternak hingga penikmat keju di Indonesia
+						melalui edukasi
+					</p>
+					<div class="w-1/2">
+						<img class="-mt-20 mb-20 p-12 drop-shadow-2xl" src="assets/img/about/first.jpg" alt="">
+
+					</div>
+				</div>
+				<div class="flex w-2/3">
+					<p class="text-justify -mt-28">
+						Serta kesadaran kami bahwa keju yang selama ini kami konsumsi dan juga dikonsumsi secara luas di
+						Indonesia adalah keju olahan dengan kandungan susu paling tinggi hanya 16% (berdasarkan
+						komposisi
+						keju olahan yang beredar di pasaran).
+					</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="quote" class="p-20 text-center text-2xl">
+		<p>Ide usaha kami ini diperkuat pula dengan adanya produksi susu sapi dan kambing segar yang tersedia di Sleman,
+			Jogja yang cukup melimpah dengan kualitas yang cukup bagus untuk membuat keju.</p>
+	</section>
+
+
+	<section id="banner" class="w-screen h-[75vh] bg-banner-product">
+	</section>
+
+	<section id="quote" class="p-20 text-center text-2xl">
+		<p>Maka sejak tahun 2019, Rumah Keju Jogja mulai produksi keju natural sebagai usaha tumbuh bersama. Kami sebut
+			usaha tumbuh, karena berawal dari ide dan energy dianugerahkan oleh Tuhan YME kami mulai usaha ini. Sampai
+			saat ini kami mulai bisa mengaryakan beberapa karyawan walaupun masih harian. Pada tahun 2022 Rumah Keju
+			Jogja memiliki badan usaha PT.</p>
+	</section>
+
+	<div class="w-screen flex flex-row-reverse">
+		<div class="w-1/3 bg-orange-rkj h-8"></div>
+	</div>
+	<section id="story" class="mt-10">
+		<p class="lg:text-5xl 2xl:text-6xl font-semibold px-44">Cerita <span class="text-orange-rkj ">keju</span> kami
+		</p>
+		<img class="p-20" src="assets/img/about/cheese-story.png" alt="">
+	</section>
+
+	<style>
+		.bg-cheese-2 {
+			background-image: url("assets/img/about/bg-vismis.webp");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: top;
+			background-attachment: fixed;
+		}
+	</style>
+	<div class="bg-cheese-2 w-screen h-full">
+		<section id="visi" class="flex justify-center">
+			<div class="flex flex-col justify-items-start w-full md:w-1/2 p-12 space-y-4">
+				<h1 class="rounded-xl text-5xl py-4 font-bold bg-orange-rkj text-center text-white">
+					Visi
+				</h1>
+				<p class="rounded-xl bg-white p-4 text-justify">
+					Kedaulatan pangan lokal yang natural dan homemade melalui
+					usaha pengolahan dan edukasi keju dan olahan susu lainnya
+					secara kreatif dan inovatif.
+				</p>
+			</div>
+		</section>
+		<section id="misi" class="flex justify-center h-[80vh]">
+			<div class="flex flex-col justify-items-start w-full md:w-1/2 p-12 space-y-4">
+				<h1 class="rounded-xl text-5xl py-4 font-bold bg-orange-rkj text-center text-white">
+					Misi
+				</h1>
+				<!-- <p class="bg-white"> -->
+				<ul class="rounded-xl bg-white p-8 list-disc text-justify">
+					<li>
+						Pelatihan & edukasi pembuatan keju natural dan lokal secara
+						handmade yang terjangkau untuk masyarakat
+					</li>
+					<li>
+						Pemberdayaan masyarakat lokal melalui pembuatan keju
+						natural handmade
+					</li>
+					<li>
+						Edukasi dan pemberdayaan peternak sapi perah dan kambing
+					</li>
+					<li>
+						Memperluas akses edukasi untuk masyarakat melalui
+						pembangunan Rumah Keju Jogja sebagai pusat pembelajaran
+						pengolahan hasil perternakan lokal secara kreatif dan
+						inovatif
+					</li>
+				</ul>
+				<!-- </p> -->
+			</div>
+		</section>
+		<section id="tujuan" class="flex justify-center h-[80vh]">
+			<div class="flex flex-col justify-items-start w-full md:w-1/2 p-12 space-y-4">
+				<h1 class="rounded-xl text-5xl py-4 font-bold bg-orange-rkj text-center text-white">
+					Tujuan
+				</h1>
+				<!-- <p class="bg-white"> -->
+				<ul class="rounded-xl bg-white p-8 list-disc">
+					<li>Kemandirian pangan lokal berupa keju natural</li>
+					<li>
+						Memanfaatkan potensi daerah untuk meningkatkan
+						kesejahteraan seluruh komponen yang terlibat.
+					</li>
+					<li>Mengedukasi masyarakat tentang keju natural.</li>
+					<li>
+						Mengedukasi peternak sapi perah dan kambing untuk dapat
+						menghasilkan susu yang berkualitas bagus dan layak untuk
+						bahan baku keju
+					</li>
+				</ul>
+				<!-- </p> -->
+			</div>
+		</section>
+	</div>
+
+	<section id="company-values" class="w-screen p-20">
+		<p class="text-7xl text-orange-800 text-center font-semibold">Company Core Values</p>
+		<div class="flex w-full">
+			<div class="w-1/2 flex flex-col">
+				<div class="flex">
+					<div class="flex w-32">
+						<img class="" src="assets/img/core_values/halal.png" alt="halal">
+					</div>
+					<div class="flex flex-col justify-center ">
+						<p class="font-semibold">Halal</p>
+						<p class="">Keju Kejugja sudah mendapatkan sertifikat Halal</p>
+					</div>
+				</div>
+				<div class="flex">
+					<div class="flex w-32">
+						<img class="" src="assets/img/core_values/artisan.png" alt="artisan">
+					</div>
+					<div class="flex flex-col justify-center w-3/4">
+						<p class="font-semibold">Artisan</p>
+						<p class="">Produksi yang kami lakukan tidak skala pabrik, dibuat secara spesial sesuai dengan
+							style originalnya</p>
+					</div>
+				</div>
+				<div class="flex">
+					<div class="flex w-32">
+						<img class="" src="assets/img/core_values/local.png" alt="local">
+					</div>
+					<div class="flex flex-col justify-center w-3/4">
+						<p class="font-semibold">Local</p>
+						<p class="">Susu merupakan bahan utama yang kami olah merupakan hasil cinta dari peternak lokal
+							di Sleman, Pembuat kejunya pun dari orang lokal.</p>
+					</div>
+				</div>
+				<div class="flex">
+					<div class="flex w-32">
+						<img class="" src="assets/img/core_values/natural.png" alt="natural">
+					</div>
+					<div class="flex flex-col justify-center w-3/4">
+						<p class="font-semibold">Natural</p>
+						<p class="">Keju Kejugja terbuat dari susu segar berkualitas prima, enzyme vegan atau calf
+							rennet, kultur dan garam laut.</p>
+					</div>
 				</div>
 			</div>
-
-			<section
-				id="content"
-				class="flex flex-col mb-5 lg:mx-20 2xl:px-24 mt-10 2xl:mt-20"
-			>
-				<style>
-					.image-cropper {
-						/* width: 100px;
-                  height: 100px; */
-						position: relative;
-						overflow: hidden;
-						border-radius: 50%;
-					}
-					.image-cropper img {
-						display: inline;
-						margin: 0 auto;
-						height: 100%;
-						width: auto;
-					}
-				</style>
-				<div class="flex flex-col md:flex-row justify-center items-center space-x-4 space-y-2 md:space-y-0 w-full">
-					<h1 class="text-7xl">About Us</h1>
-					<!-- <div class="flex text-7xl"><h1>About Us</h1></div> -->
-					<img class="h-44" src="assets/logo.png" alt="" />
-					<!-- <div class="flex">
-						<img class="h-44" src="assets/logo.png" alt="" />
-					</div> -->
-					<img
-						class="h-44"
-						src="assets/img/about/kejugja-color.png"
-						alt=""
-					/>
-					<!-- <div class="h-44 w-44 -mb-60"> -->
-					<img
-						class="h-44 w-44 -pb-52 z-10 rounded-lg hidden md:block"
-						src="assets/img/about/mr_simple.webp"
-						alt=""
-					/>
-					<!-- </div> -->
-					<!-- <div class="flex">
-						<img
-							class="h-44"
-							src="assets/img/about/kejugja-color.png"
-							alt=""
-						/>
-					</div> -->
-					<!-- <div class="flex"><img src="" alt="" /></div> -->
-				</div>
-				<div class="flex bg-orange-rkj w-full p-8 space-x-8 rounded-xl">
-					<div class="w-full md:w-2/3">
-						<p class="text-white text-justify">
-							Rumah Keju Jogja didirikan pada 16 Februari 2018 sebagai
-							komunitas kecil yang berfokus pada edukasi keju natural.
-							Dibentuk oleh ibu rumah tangga yang ingin menyediakan
-							makanan sehat dan terjangkau, terinspirasi oleh kesadaran
-							akan rendahnya kandungan susu dalam keju olahan di pasaran
-							(hanya 16%). Usaha ini didukung oleh ketersediaan susu sapi
-							dan kambing berkualitas di Sleman, Jogja. Dengan ide dan
-							energi dari Tuhan, Rumah Keju Jogja telah tumbuh, kini
-							mempekerjakan beberapa karyawan harian sejak awal
-							perjalanannya.
-						</p>
-					</div>
-					<div class="w-1/3 pl-4 z-20 hidden md:block">
-						<img
-							class="h-44 w-44 rounded-lg"
-							src="assets/img/about/group.webp"
-							alt=""
-						/>
-					</div>
-				</div>
-			</section>
-
-			<!-- Mobile -->
-			<section id="hero-1" class="lg:hidden hidden mb-5 w-screen overflow-x-hidden">
-				<style>
-					.image-cropper-sm {
-						/* width: 12em;
-                  height: 12em;
-						position: relative; */
-						z-index: 0;
-						overflow: hidden;
-						border-radius: 50%;
-						position: absolute;
-						width: 19em;
-						height: 19em;
-						top: -5em;
-						right: -5em;
-						/* opacity: 30%; */
-					}
-					.image-cropper-sm img {
-						display: inline;
-						/* margin: 0 auto; */
-						height: 100%;
-						width: auto;
-					}
-				</style>
-
-				<div class="orn-container z-0">
-					<div class="image-cropper-sm h-1/6">
-						<img src="assets/img/cheese-platter.webp" class="rounded" />
-					</div>
-					<img
-						style="bottom: 6em"
-						class="orn-equality"
-						src="assets/img/ornamen/equality.png"
-						alt="equality-core"
-					/>
-					<img
-						style="bottom: -4em"
-						class="orn-natural"
-						src="assets/img/ornamen/natural.png"
-						alt="natural-core"
-					/>
-				</div>
-
-				<div class="flex flex-col px-6 space-y-6">
-					<div class="flex space-x-2">
-						<div class="flex">
-							<img
-								src="/assets/icon/Halal.svg"
-								height="64"
-								width="64"
-								alt=""
-							/>
-							<!-- <span>100% <br> Halal</span> -->
-						</div>
-						<div class="flex">
-							<img
-								src="/assets/icon/BPOM.svg"
-								height="64"
-								width="64"
-								alt=""
-							/>
-							<!-- <span>Badan <br> POM</span> -->
-						</div>
-					</div>
-					<!-- <h1 class="text-7xl font-bold text-orange-rkj">
-						Keju <br />
-						Natural
-					</h1> -->
-					<h2 class="z-30 font-bold text-3xl text-orange-rkj">
-						Real People <br />
-						Eat Real Cheese
-					</h2>
-					<p class="text-justify">
-						Rumah Keju Jogja hadir untuk kamu pecinta keju sejati. Dengan
-						setiap gigitan, kamu akan merasakan kelezatan keju alami yang
-						kaya rasa dan teksturnya yang autentik
-					</p>
-					<a href="" class="text-white">
-						<div
-							class="flex justify-center w-full bg-orange-rkj rounded-full p-4"
-						>
-							Order Sekarang
-						</div>
-					</a>
-				</div>
-				<!-- <div class="flex justify-center w-3/5">
-				</div> -->
-			</section>
-		</section>
-
-		<style>
-			.bg-cheese-2 {
-				background-image: url("assets/img/about/bg-vismis.webp");
-				background-repeat: no-repeat;
-				background-size: cover;
-				background-position: top;
-				background-attachment: fixed;
-			}
-		</style>
-		<div class="bg-cheese-2 xl:mt-40 w-screen h-full">
-			<section id="visi-misi" class="flex flex-col md:flex-row justify-center h-full lg:h-[80vh] lg:px-32">
-				<div class="flex flex-col justify-items-start w-full md:w-1/2 p-12 space-y-4">
-					<h1
-						class="rounded-xl text-5xl py-4 font-bold bg-orange-rkj text-center text-white"
-					>
-						Visi
-					</h1>
-					<p class="rounded-xl bg-white p-4">
-						Kedaulatan pangan lokal yang natural dan homemade melalui
-						usaha pengolahan dan edukasi keju dan olahan susu lainnya
-						secara kreatif dan inovatif.
-					</p>
-				</div>
-				<div class="flex flex-col justify-items-start w-full md:w-1/2 p-12 space-y-4">
-					<h1
-						class="rounded-xl text-5xl py-4 font-bold bg-orange-rkj text-center text-white"
-					>
-						Misi
-					</h1>
-					<!-- <p class="bg-white"> -->
-					<ul class="rounded-xl bg-white p-8 list-disc">
-						<li>
-							Pelatihan & edukasi pembuatan keju natural dan lokal secara
-							handmade yang terjangkau untuk masyarakat
-						</li>
-						<li>
-							Pemberdayaan masyarakat lokal melalui pembuatan keju
-							natural handmade
-						</li>
-						<li>
-							Edukasi dan pemberdayaan peternak sapi perah dan kambing
-						</li>
-						<li>
-							Memperluas akses edukasi untuk masyarakat melalui
-							pembangunan Rumah Keju Jogja sebagai pusat pembelajaran
-							pengolahan hasil perternakan lokal secara kreatif dan
-							inovatif
-						</li>
-					</ul>
-					<!-- </p> -->
-				</div>
-			</section>
-			<section id="tujuan" class="flex justify-center h-[80vh]">
-				<div class="flex flex-col justify-items-start w-full md:w-1/2 p-12 space-y-4">
-					<h1
-						class="rounded-xl text-5xl py-4 font-bold bg-orange-rkj text-center text-white"
-					>
-						Tujuan
-					</h1>
-					<!-- <p class="bg-white"> -->
-					<ul class="rounded-xl bg-white p-8 list-disc">
-						<li>Kemandirian pangan lokal berupa keju natural</li>
-						<li>
-							Memanfaatkan potensi daerah untuk meningkatkan
-							kesejahteraan seluruh komponen yang terlibat.
-						</li>
-						<li>Mengedukasi masyarakat tentang keju natural.</li>
-						<li>
-							Mengedukasi peternak sapi perah dan kambing untuk dapat
-							menghasilkan susu yang berkualitas bagus dan layak untuk
-							bahan baku keju
-						</li>
-					</ul>
-					<!-- </p> -->
-				</div>
-			</section>
+			<div class="w-1/2 h-1/2 bg-white flex justify-items-center justify-center">
+				<img class="w-96" src="assets/img/ornamen/ornament.png" alt="ornamen">
+			</div>
 		</div>
+		<div class="flex w-full flex-col space-y-6">
+			<div class="flex space-x-12">
+				<div class="flex w-1/2">
+					<div class="flex w-32">
+						<img class="" src="assets/img/core_values/educative.png" alt="education">
+					</div>
+					<div class="flex flex-col justify-start w-3/4">
+						<p class="font-semibold">Education</p>
+						<p class="text-justify">Mengedukasi konsumen tentang keju, Kami juga mengadakan pelatihan dasar
+							membuat keju, sehingga masyarakat sadar dan menghargai keju natural</p>
+					</div>
+				</div>
+				<div class="flex w-1/2">
+					<div class="flex flex-col justify-center w-3/4">
+						<p class="font-semibold text-end">Fairtrade</p>
+						<p class="text-justify">Susu yang berkualitas prima dari peternak kami beli beli dengan harga
+							layak, sehingga peternak mendapatkan margin yang wajar. Begitulah pula dengan tenaga kerja
+							full time dan part time kami hargai dengan layak.</p>
+					</div>
+					<div class="flex w-32">
+						<img class="" src="assets/img/core_values/faritrade.png" alt="faritrade">
+					</div>
+				</div>
 
-		<footer-component />
+			</div>
+			<div class="flex space-x-12">
+				<div class="flex w-1/2">
+					<div class="flex w-32">
+						<img class="" src="assets/img/core_values/traceability.png" alt="traceability">
+					</div>
+					<div class="flex flex-col justify-center w-3/4">
+						<p class="font-semibold">Traceability</p>
+						<p class="text-justify">Karena kelokalannya tersbut maka keju Kejugja mudah terlacak, konsumen
+							bisa mengetahui dari mana dan bagaimana susu sampai dengan keju dihasilkan.</p>
+					</div>
+				</div>
+				<div class="flex w-1/2">
+					<div class="flex flex-col justify-center w-3/4">
+						<p class="font-semibold text-end">Pahlawan Pangan</p>
+						<p class="text-justify">Menjadi konsumen kejugja otomatis menjadi pehlawan pangan, karena sudah
+							mendukung kemandirian pangan lokal dalam hal ini keju.</p>
+					</div>
+					<div class="flex w-32">
+						<img class="" src="assets/img/core_values/pahlawan_pangan.png" alt="pahlawan_pangan">
+					</div>
+				</div>
 
-		<script src="/include/js/flowbite/dist/flowbite.min.js"></script>
-		<script>
-			// Get the header element
-			const header = document.getElementById("header");
+			</div>
+			<div class="flex space-x-12">
+				<div class="flex w-1/2">
+					<div class="flex w-32">
+						<img class="" src="assets/img/core_values/equality.png" alt="equality">
+					</div>
+					<div class="flex flex-col justify-center w-3/4">
+						<p class="font-semibold">Gender Equality</p>
+						<p class="text-justify">Pembuat keju serta tim kami sebagian besar adalah perempuan. Dan kami
+							tetap membuka hati serta kesempatan untuk berusaha bersama tanpa deskriminasi gender.</p>
+					</div>
+				</div>
+				<div class="flex w-1/2">
+					<div class="flex flex-col justify-center w-3/4">
+						<p class="font-semibold text-end">Sustainability</p>
+						<p class="text-justify">Dengan menjalankan semua nilai dalam Rumah Keju Jogja, kami berharap
+							selalu bisa meneruskan proses tumbuh bersama ini secara berkelanjutan. </p>
+					</div>
+					<div class="flex w-32">
+						<img class="" src="assets/img/core_values/sustainability.png" alt="sustainability">
+					</div>
+				</div>
 
-			// Listen for scroll events
-			window.addEventListener("scroll", function () {
-				// Check if the scroll position is greater than 20px
-				if (window.scrollY > 20) {
-					// Add a class to change the background color
-					header.classList.add("bg-white"); // Change to the desired Tailwind CSS class
-				} else {
-					// Remove the class if the scroll position is less than 20px
-					header.classList.remove("bg-white");
-				}
-			});
-		</script>
-	</body>
+			</div>
+
+			<!-- <div class="w-1/2 flex flex-col">
+				<div class="flex">
+					<div class="flex flex-col justify-center w-3/4">
+						<p class="font-semibold">Fairtrade</p>
+						<p class="">Susu yang berkualitas prima dari peternak kami beli beli dengan harga layak, sehingga peternak mendapatkan margin yang wajar. Begitulah pula dengan tenaga kerja full time dan part time kami hargai dengan layak.</p>
+					</div>
+					<div class="flex w-32">
+						<img class="" src="assets/img/core_values/equality.png" alt="education">
+					</div>
+				</div>
+				<div class="flex">
+					<div class="flex w-32">
+						<img class="" src="assets/img/core_values/traceability.png" alt="traceability">
+					</div>
+					<div class="flex flex-col justify-center w-3/4">
+						<p class="font-semibold">Traceability</p>
+						<p class="">Karena kelokalannya tersbut maka keju Kejugja mudah terlacak, konsumen bisa mengetahui dari mana dan bagaimana susu sampai dengan keju dihasilkan.</p>
+					</div>
+				</div>
+				<div class="flex">
+					<div class="flex w-32">
+						<img class="" src="assets/img/core_values/equality.png" alt="equality">
+					</div>
+					<div class="flex flex-col justify-center w-3/4">
+						<p class="font-semibold">Gender Equality</p>
+						<p class="">Pembuat keju serta tim kami sebagian besar adalah perempuan. Dan kami tetap membuka hati serta kesempatan untuk berusaha bersama tanpa deskriminasi gender.</p>
+					</div>
+				</div>
+				
+			</div> -->
+
+
+		</div>
+	</section>
+
+	<footer-component />
+
+	<script src="/include/js/flowbite/dist/flowbite.min.js"></script>
+	<script>
+		// Get the header element
+		const header = document.getElementById("header");
+
+		// Listen for scroll events
+		window.addEventListener("scroll", function () {
+			// Check if the scroll position is greater than 20px
+			if (window.scrollY > 20) {
+				// Add a class to change the background color
+				header.classList.add("bg-white"); // Change to the desired Tailwind CSS class
+			} else {
+				// Remove the class if the scroll position is less than 20px
+				header.classList.remove("bg-white");
+			}
+		});
+	</script>
+</body>
+
 </html>
