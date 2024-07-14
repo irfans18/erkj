@@ -26,7 +26,7 @@ headerTemplate.innerHTML = `
          background-color: white;
       }
    </style>
-   <header class="max-h-6 pb-12" style="font-family: 'Poppins', sans-serif">
+   <header class="max-h-6 pb-12 navbar-1-5" style="font-family: 'Poppins', sans-serif">
 			<div class="container mx-auto flex flex-wrap flex-row items-center justify-between">
 				<nav
 					class="lg:flex hidden lg:w-2/5 flex-wrap items-center text-base md:ml-auto lg:space-y-0 space-y-6 lg:space-x-2 space-x-0">
